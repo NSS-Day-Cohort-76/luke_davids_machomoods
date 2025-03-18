@@ -11,23 +11,88 @@ h1 {
     font-style: italic;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 20px;
+    color:blueviolet;
+    text-shadow: -10px 10px black;
+}
+
+#pageTitle {
+    border-bottom: 8px dotted green;
+}
+
+#prompt {
+    font-size: 100px;
+    text-shadow: -10px 10px rgb(236, 220, 220);
+    margin: 40px;
+}
+
+h2 {
+    font-size: 125px;
+    font-style: bold;
+    text-align: center;
+    margin: 30px;
+    color: green;
+    text-shadow: 5px 5px yellow;
+}
+
+h3 {
+    margin: 0;
+    font-size: 100px;
+    text-align: center;
     color:blueviolet;
     text-shadow: -10px 10px black;
 }
 
 #container {
     display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-    max-width: 300px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%
+
 }
 .moodImg {
-    width: 500px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.mood:hover {
+    background-color: yellow;
+    font-size: 18px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    transform: translateY(-15px);
+
 }
 
 .mood {
     display: flex;
-    flex: 1;
+    flex: 1 1 30%;
+    gap: 10px;
+    background: red;
     flex-direction: column;
-    padding: 10px;
+    border: 5px solid aqua;
+    border-radius: 25px;
+    width: 600px;
+    margin: 10px;
+}
+
+.machoAdvice {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    align-items: center;
+}
+
+.machoAdviceTitle {
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.machoAdviceQuotes {
+    width: 50%;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+
 }

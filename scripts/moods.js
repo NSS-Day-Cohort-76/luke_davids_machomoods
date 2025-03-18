@@ -6,12 +6,16 @@ export const makeMoods = () => {
         HTMLString += `
         <section class="mood"><h2>${item.name}</h2>
         <img class="moodImg" alt="${item.text} image" src="${item.imageUrl}">
-            <div>
-                <h3 class="machoAdvice">Macho Advice:</h3>
-                <ul>
-                    <li>${item.quotes[0]}</li>
-                    <li>${item.quotes[1]}</li>
-                </ul>
+            <div class="machoAdvice">
+                <div class="machoAdviceTitle">
+                    <h3>Macho • Advice •</h3>
+                </div>
+                <div class="machoAdviceQuotes">
+                    <ol>
+                        <li>${item.quotes[0]}</li><br>
+                        <li>${item.quotes[1]}</li>
+                    </ul>
+                </div>
             </div>
         </section>`
         
